@@ -13,49 +13,39 @@ body {
 }
 
 /* header section */
-#ui {
+header{
     background-color: beige;
-    ;
-    padding: 10px;
-    margin: 0;
-
 }
-
-#ui li {
+.menu li {
     display: inline;
-    width: 60%;
-    height: 30px;
-    line-height: 30px;
+    height: 50px;
+    line-height: 50px;
     text-transform: capitalize;
-    margin-right: 70px;
+    font-size: 25px;
 }
-
-#ui li:first-child {
-    text-align: left;
-    margin-right: 410px;
-    margin-left: 8%;
-    font-size: 26pt;
+.menu li:first-child {
+    font-size: 30px;
     text-shadow: 0 0 5px black;
+    margin-right: 40%;
+    margin-left: 20px;
 }
 
-#ui li:first-child:hover {
+.menu li:first-child:hover {
     cursor: pointer;
     transition: 0.7s;
 }
 
-#ui li a,
-#ui li button {
+.menu li a {
     background: none;
     color: black;
     border: none;
-    font-size: 16pt;
-    padding: 5px 11px;
+    padding: 5px 30px;
     border-radius: 9px;
 
 }
 
-#ui li a:hover,
-#ui li button:hover {
+.menu li a:hover
+ {
     background: rgba(184, 90, 90, 0.39);
     color: white;
     cursor: pointer;
@@ -65,42 +55,33 @@ body {
 
 /* about section */
 
-.row {
+.about1{
     background-color: bisque;
-    display: inline-flex;
 }
-
-.col {
-    display: inline-block;
-}
-
-.col img {
-    height: 500px;
+.about1 .aboutimg img {
+    height: 400px;
     width: 600px;
     margin: 20px;
 }
 
-.col h1 {
-    margin-left: 210px;
-    font-size: 20pt;
-    margin-bottom: 20px;
-    margin-top: 100px;
+.about1 .abouttext h1 {
+   text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 50px;
     text-shadow: 0 0 6px black;
 }
 
-.col p {
+.about1 .abouttext  p {
     font-style: italic;
-    margin-top: 20pt;
+    margin-top: 20px;
     font-size: 15pt;
-    margin-left: 7%;
-    margin-right: 7%;
-
-
+   text-align: center;
 }
 
-.col button {
+.about1 .abouttext  button {
     font-size: 20px;
-    margin-left: 223px;
+   text-align: center;
     margin-top: 20px;
     background-color: rgba(184, 90, 90, 0.39);
     width: 130px;
@@ -108,51 +89,14 @@ body {
     border-radius: 5px;
     border: none;
     text-transform: capitalize;
+    margin-left: 40%;
 }
 
-.col button:hover {
+.about1 .abouttext  button:hover {
     background: rgba(184, 90, 90, 0.39);
     color: white;
     cursor: pointer;
     transition: 0.7s;
-}
-
-/* order section */
-#order {
-    width: 100%;
-    max-height: 700px;
-    /* overflow: hidden; */
-}
-
-.time-row {
-    background-color: bisque;
-    display: inline-flex;
-}
-
-.time-col {
-    display: inline-block;
-    margin-left: 180pt;
-    margin-bottom: 20pt;
-    text-align: center;
-}
-
-.time-col img {
-    margin-top: 20pt;
-    margin-bottom: 5pt;
-    margin-right: 80pt;
-}
-
-.time-col h3 {
-    font-size: 20pt;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 30pt;
-}
-
-.time-col p {
-    font-style: italic;
-    font-size: 14pt;
-    margin-top: 10pt
 }
 
 
@@ -170,6 +114,7 @@ body {
     font-size: larger;
     font-size: 30pt;
     margin-top: 50px;
+    margin-bottom: 20px;
     text-shadow: 0 0 6px black;
 }
 
@@ -212,27 +157,53 @@ body {
     border-radius: 50px;
 
 }
-
-.photo-col img .tomato {
-    margin-top: 40px;
-}
-
 #veg {
     font-size: medium;
     font-style: italic;
     font-weight: bold;
 }
 
+/* order section */
+#order {
+    max-height: 700px;
+    background-color: bisque;
+}
+#order .timetext{
+    margin-top: 20px;
+    margin-bottom: 5px;
+   margin-left: 50px;
+   text-align: center;
+}
+
+#order .timetext h3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 30px;
+}
+
+#order .timetext p {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#order .timeimg img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
 /* contact us section */
 
 .contact_us {
     text-align: center;
     background-color: beige;
     padding: 10px;
+    text-transform: capitalize;
 }
 
 .contact_us h1 {
     font-size: 30px;
+padding-top: 20px;
 
 }
 
@@ -244,11 +215,18 @@ body {
 
 .contact_us button {
     border: none;
-    background-color: none;
-    height: 25px;
-    line-height: 25px;
+    background-color:none;
+    height: 35px;
+    line-height: 35px;
     width: 100px;
-    font-size: 20px;
+    font-size: 23px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .contact_us button:hover {
